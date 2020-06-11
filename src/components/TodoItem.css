@@ -1,0 +1,39 @@
+.TodoItem {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    margin: 8px 5px;
+    color: rgb(71, 70, 70);
+}
+
+.TodoItem>span {
+    margin: 10px;
+}
+
+.TodoItem>img {
+    margin-top: 5px;
+}
+
+.TodoItem:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.TodoItem-complete>span {
+    text-decoration: line-through;
+    opacity: .3;
+}
+
+.TodoItem .closeTodo {
+    float: right;
+    cursor: pointer;
+    opacity: 0;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    transition: all .4s;
+    transform: translateX(-50%);
+}
+
+.TodoItem:hover .closeTodo {
+    opacity: 1;
+    transform: translateX(0);
+}

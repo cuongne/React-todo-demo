@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+}
+
+.footer {}
+
+.footer .count {
+    margin-top: 1em;
+    margin-left: 5px;
+}
+
+.footer .count .items {
+    margin: 0 5px;
+}
+
+.footer .checked {
+    display: flex;
+    list-style: none;
+}
+
+.footer .checked>li {
+    padding: 5px 10px;
+}
+
+.footer .checked>li a {
+    text-decoration: none;
+    color: rgb(136, 132, 132);
+    font-weight: bold;
+}
+
+.footer .checked>li a.selected {
+    border: 1px solid #bebebe;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
